@@ -22,12 +22,13 @@ public class ExMain {
             scanner.close();
         } catch (FileNotFoundException e) {
             System.err.println(e.getMessage());
-            System.exit(1); //終了ステータス。ここでは取り敢えず0(=正常)以外にした。
+            System.exit(1);
         }
 
-        //Player player = new Player();
-        //Maze maze = new Maze(strings.get(0),strings.get(1));
-        System.out.println(strings.get(0));
+        System.out.println(strings);
+
+        Player player = new Player();
+        Maze maze = new Maze();
 
     }
 }
